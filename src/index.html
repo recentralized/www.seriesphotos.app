@@ -2,40 +2,84 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Series – powerful photo layout</title>
+    <title>Series – Powerful Photo Layout</title>
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129901476-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-129901476-1');
     </script>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600,700" rel="stylesheet">
 
     <style type="text/css">
       body {
-        font-family: 'Source Sans Pro';
-        font-weight: 400;
-      }
-      h1 {
+        font-family: 'Poppins';
         font-weight: 600;
+        background: url('background.jpg') no-repeat center top fixed;
+        background-size: cover;
+      }
+      html,body{
+        height:100%;
+        margin:0;
+        padding:0
+      }
+      body:before{
+        content:"";
+        width:80%;
+        height:80%;
+        display:block;
+        border: 22px solid #fff;
+        transform: translate(10%, 10%);
       }
       #wrapper {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 1em 1em 2em 2em;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .logo {
+        color: #fff;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 2em;
+      }
+      .logo h1 {
+        font-weight: 600;
+        text-transform: lowercase;
+        margin: 0;
+        font-size: 5em;
+      }
+      .logo h2 {
+        font-weight: 700;
+        text-transform: lowercase;
+        margin: 0;
+        font-size: 1.6em;
+      }
+      .button {
+        color: #fff;
+        padding: 8pt 20px;
+        border-radius: 4px;
+        background-color: #F96464;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
       }
     </style>
     </head>
   <body>
     <div id="wrapper">
-      <h1>Series – powerful photo layout</h1>
+      <div class="logo">
+        <h1>Series</h1>
+        <h2>Powerful Photo Layout</h2>
+      </div>
       <p>
-        Coming soon to the App Store for iOS and iPad
+        <a href="https://recentralized.typeform.com/to/LTwZjy" class="button">
+          Request Early Access
+        </a>
       </p>
     </div>
   </body>

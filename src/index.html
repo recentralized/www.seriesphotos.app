@@ -41,6 +41,7 @@
         position: fixed;
         top: 50%;
         left: 50%;
+        width: 100%;
         transform: translate(-50%, -50%);
       }
       .logo {
@@ -54,12 +55,14 @@
         text-transform: lowercase;
         margin: 0;
         font-size: 5em;
+        letter-spacing: -2pt;
       }
       .logo h2 {
         font-weight: 700;
         text-transform: lowercase;
         margin: 0;
         font-size: 1.6em;
+        letter-spacing: -.5pt;
       }
       .button {
         color: #fff;
@@ -69,6 +72,14 @@
         display: inline-block;
         cursor: pointer;
         text-decoration: none;
+      }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .logo h1 {
+          font-size: 4.2em;
+        }
+        .logo h2 {
+          font-size: 1.4em;
+        }
       }
     </style>
     </head>

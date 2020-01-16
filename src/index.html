@@ -80,7 +80,7 @@
         margin: 4rem 0 3rem 0;
         text-align: center;
       }
-      h1 {
+      header h1 {
         color: #fff;
         font-weight: 700;
         line-height: 1;
@@ -92,7 +92,7 @@
         white-space: nowrap; 
         overflow: hidden; 
       }
-      h2 {
+      header h2 {
         color: #fff;
         font-weight: 700;
         line-height: 1.2;
@@ -100,34 +100,34 @@
         margin: 0;
         margin-bottom: 0.6rem;
       }
-      h3 {
+      header h3 {
         color: #7f7f7f;
         font-weight: 500;
         line-height: 1;
         margin: 0;
       }
 
-      h1 {
+      header h1 {
         width: 150px;
         height: 37.5px;
       }
-      h2 {
+      header h2 {
         font-size: 1.3rem;
       }
-      h3 {
+      header h3 {
         font-size: .9rem;
       }
 
       /* Header sizes for large screen */
       @media only screen and (min-device-width: 500px) {
-          h1 {
+          header h1 {
             width: 200px;
             height: 50px;
           }
-          h2 {
+          header h2 {
             font-size: 1.8rem;
           }
-          h3 {
+          header h3 {
             font-size: 1.3rem;
           }
       }
@@ -251,6 +251,88 @@
         }
       }
 
+      /* Section: Instagram */
+
+      #section-instagram {
+        background-color: #222222;
+        text-align: center;
+        width: 100%;
+        padding: 3rem 0;
+      }
+
+      #section-instagram h2 {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 37px;
+        height: 37px;
+      }
+      #section-instagram h2 a {
+        display: block;
+        margin: 0;
+        background-image: url('/image/instagram-logo.png') ;
+        background-size: 100%;
+        text-indent: 100%; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        width: 100%;
+        height: 100%;
+      }
+
+      .insta-prompt {
+        margin: 0 auto;
+        max-width: 350px;
+        line-height: 1.4;
+      }
+      .insta-prompt dt {
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin: 0 0 1rem 0;
+      }
+      .insta-prompt dt a,
+      .insta-prompt dt a:visited {
+        color: #fff;
+        text-decoration: none;
+      }
+      .insta-prompt dt a:hover {
+        text-decoration: underline;
+      }
+      .insta-prompt dd {
+        color: #7f7f7f;
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin: 0 0 2rem 0;
+        padding: 0 1rem 2rem 1rem;
+        border-bottom: 2px solid #ff9900;
+      }
+      .insta-prompt dd:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: none;
+      }
+
+      /* Insta-Prompt sizes for large screens */
+      @media only screen and (min-device-width: 500px) {
+        #section-instagram {
+          padding: 4rem 0;
+        }
+        #section-instagram h2 {
+          margin-bottom: 3rem;
+          width: 50px;
+          height: 50px;
+        }
+        .insta-prompt {
+          max-width: 500px;
+        }
+        .insta-prompt dt {
+          font-size: 1.8rem;
+        }
+        .insta-prompt dd {
+          font-size: 1.3rem;
+          margin-bottom: 3rem;
+          padding-bottom: 3rem;
+        }
+      }
+
       /* Section: Download */
 
       #section-download {
@@ -334,6 +416,20 @@
 
     <section id="section-download">
       <a class="appstore-download" href="https://apps.apple.com/us/app/id1471473571">Download on the App Store</a>
+    </section>
+
+    <section id="section-instagram">
+      <h2><a href="https://instagram.com/seriesphotosapp/">Series on Instagram</a></h2>
+      <dl class="insta-prompt">
+        <dt><a href="https://instagram.com/seriesphotosapp/">Follow @seriesphotosapp</a></dt>
+        <dd>
+          Get layout tips, app updates, and see inspiring work.
+        </dd>
+        <dt><a href="https://instagram.com/explore/tags/madewithseries/">Explore #madewithseries</a></dt>
+        <dd>
+          Join a community of photographers that’s finding new ways to present their work and their tell stories.
+        </dd>
+      </dl>
     </section>
 
     <footer>

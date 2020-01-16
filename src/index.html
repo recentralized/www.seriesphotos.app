@@ -48,6 +48,12 @@
         margin: 0 auto;
       }
 
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
       a:link,
       a:visited {
         color: #7f7f7f;
@@ -55,6 +61,17 @@
       a:hover,
       a:active {
         color: #fff;
+      }
+
+      .appstore-download {
+        display: inline-block;
+        background-image: url('/image/appstore-download.png') ;
+        background-size: 100%;
+        width: 120px;
+        height: 42px;
+        text-indent: 100%; 
+        white-space: nowrap; 
+        overflow: hidden; 
       }
 
       /* Header */
@@ -71,15 +88,12 @@
         margin-bottom: 1.2rem;
         background-image: url('/image/logo.png') ;
         background-size: 100%;
-        width: 200px;
-        height: 50px;
         text-indent: 100%; 
         white-space: nowrap; 
         overflow: hidden; 
       }
       h2 {
         color: #fff;
-        font-size: 1.8rem;
         font-weight: 700;
         line-height: 1.2;
         text-transform: uppercase;
@@ -88,50 +102,70 @@
       }
       h3 {
         color: #7f7f7f;
-        font-size: 1.3rem;
         font-weight: 500;
         line-height: 1;
         margin: 0;
       }
 
-      /* Main */
+      h1 {
+        width: 150px;
+        height: 37.5px;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      h3 {
+        font-size: .9rem;
+      }
 
-      .section-main {
-        position: relative;
-        margin: 0 0 6rem 0;
+      /* Header sizes for large screen */
+      @media only screen and (min-device-width: 500px) {
+          h1 {
+            width: 200px;
+            height: 50px;
+          }
+          h2 {
+            font-size: 1.8rem;
+          }
+          h3 {
+            font-size: 1.3rem;
+          }
+      }
+
+      /* Section: Main */
+
+      #section-main {
+        margin: 0 0 3rem 0;
         text-align: center;
         width: 100%;
       }
       video {
-        margin-bottom: 3rem;
+        margin: 0;
+        max-width: 80%;
       }
-      .appstore-download {
-        display: inline-block;
-        background-image: url('/image/appstore-download.png') ;
-        background-size: 100%;
-        width: 120px;
-        height: 42px;
-        text-indent: 100%; 
-        white-space: nowrap; 
-        overflow: hidden; 
+      #download-below-video {
+        margin: 3rem 0 3rem 0;
+      }
+
+      /* Constrain video width on large screen */
+      @media only screen and (min-device-width: 500px) {
+        video {
+          max-width: 230px;
+        }
       }
 
       /* Quotes */
 
-      #quote-wrapper {
-        display: flex;
-      }
-
       .quotes {
-        position: relative;
         list-style-type: none;
-        margin: 0;
-        height: 50px;
-        width: 100%;
+        margin: 0 auto;
+        max-width: 230px;
+        padding: 0;
       }
       .quotes-box {
         border: 2px solid #ddd;
         padding: 1.5rem 1rem;
+        margin: 0 auto 3rem auto;
       }
       .quotes-txt {
         font-size: 1.1rem;
@@ -157,32 +191,78 @@
       /* danrubin */
       #quote1 {
         border-color: #ff9900;
-        position: absolute;
-        top: 8rem;
-        right: 6rem;
-        width: 19rem;
       }
       /* gvngld */
       #quote2 {
         border-color: #7D7D7D;
-        position: absolute;
-        top: 16rem;
-        left: 5rem;
-        width: 12.5rem;
-        z-index: 5;
+        max-width: 60%;
       }
       /* shutterbugs */
       #quote3 {
         border-color: #AFAFAF;
-        position: absolute;
-        top: 5rem;
-        left: 15rem;
-        width: 16rem;
+        max-width: 80%;
+      }
+
+      /* Quotes go horizontal on very large screen */
+      @media only screen and (min-device-width: 850px) {
+        #section-main {
+          display: flex;
+        }
+        #video {
+          order: 2;
+        }
+        #download-below-video {
+          display: none;
+        }
+        #quoteblock-1 {
+          order: 1;
+        }
+        #quoteblock-2 {
+          order: 3;
+        }
+
+        .quotes {
+          position: relative;
+          width: 100%;
+          max-width: 100%;
+        }
+
+        /* danrubin */
+        #quote1 {
+          position: absolute;
+          top: 8rem;
+          right: 6rem;
+          width: 19rem;
+        }
+        /* gvngld */
+        #quote2 {
+          position: absolute;
+          top: 16rem;
+          left: 5rem;
+          width: 12.5rem;
+          z-index: 5;
+        }
+        /* shutterbugs */
+        #quote3 {
+          position: absolute;
+          top: 5rem;
+          left: 15rem;
+          width: 16rem;
+        }
+      }
+
+      /* Section: Download */
+
+      #section-download {
+        margin: 0 0 3rem 0;
+        text-align: center;
+        width: 100%;
       }
 
       /* Footer */ 
 
       footer {
+        margin: 6rem 0 3rem 0;
         text-align: center;
       }
       footer p {
@@ -190,6 +270,7 @@
       }
       .footer-links a {
         display: inline-block;
+        line-height: 1.8;
         padding: 0 0.5rem;
       }
       .footer-signoff {
@@ -198,7 +279,6 @@
         font-weight: 300;
       }
     </style>
-
     </head>
   <body>
     <header>
@@ -207,49 +287,52 @@
       <h3>Made for photographers. Optimized for Instagram.</h3>
     </header>
 
-    <section class="section-main">
-      <div id="quote-wrapper">
-
-        <ol class="quotes">
-          <li class="quotes-box" id="quote1">
-            <p class="quotes-txt">
-              “Series makes creating Instagram Carousels simple and straightforward, especially splitting wider images over multiple frames.<br>An indispensable tool.”
-            </p>
-            <p class="quotes-attr">
-              <a href="https://instagram.com/danrubin/">Dan Rubin</a>
-            </p>
-          </li>
-        </ol>
-
+    <section id="section-main">
+      <div id="video">
         <a href="https://apps.apple.com/us/app/id1471473571">
-            <video playsinline autoplay muted loop width="230">
-              <source src="/video/demo-framed.v2.mp4" type="video/mp4">
-            </video>
+          <video playsinline autoplay muted loop>
+            <source src="/video/demo-framed.v2.mp4" type="video/mp4">
+          </video>
         </a>
-
-        <ol class="quotes">
-          <li class="quotes-box" id="quote2">
-            <p class="quotes-txt">
-              “Tools for those of us that shoot a lot but feel weird about posting too much or too similar.”
-            </p>
-            <p class="quotes-attr">
-              <a href="https://www.instagram.com/gvngld/">Gavin Gould</a>
-            </p>
-          </li>
-          <li class="quotes-box" id="quote3">
-            <p class="quotes-txt">
-              “It’s been good practice for me in understanding the narrative component to my works.”
-            </p>
-            <p class="quotes-attr">
-              <a href="https://instagram.com/shutterbugs87/">Joonbug</a>
-            </p>
-          </li>
-        </ol>
       </div>
 
-      <p>
+      <p id="download-below-video">
         <a class="appstore-download" href="https://apps.apple.com/us/app/id1471473571">Download on the App Store</a>
       </p>
+
+      <ol class="quotes" id="quoteblock-1">
+        <li class="quotes-box" id="quote1">
+          <p class="quotes-txt">
+            “Series makes creating Instagram Carousels simple and straightforward, especially splitting wider images over multiple frames.<br>An indispensable tool.”
+          </p>
+          <p class="quotes-attr">
+            <a href="https://instagram.com/danrubin/">Dan Rubin</a>
+          </p>
+        </li>
+      </ol>
+
+      <ol class="quotes" id="quoteblock-2">
+        <li class="quotes-box" id="quote2">
+          <p class="quotes-txt">
+            “Tools for those of us that shoot a lot but feel weird about posting too much or too similar.”
+          </p>
+          <p class="quotes-attr">
+            <a href="https://www.instagram.com/gvngld/">Gavin Gould</a>
+          </p>
+        </li>
+        <li class="quotes-box" id="quote3">
+          <p class="quotes-txt">
+            “It’s been good practice for me in understanding the narrative component to my works.”
+          </p>
+          <p class="quotes-attr">
+            <a href="https://instagram.com/shutterbugs87/">Joonbug</a>
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="section-download">
+      <a class="appstore-download" href="https://apps.apple.com/us/app/id1471473571">Download on the App Store</a>
     </section>
 
     <footer>

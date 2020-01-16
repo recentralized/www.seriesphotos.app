@@ -35,77 +35,232 @@
       gtag('config', 'UA-149900284-1');
     </script>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6396132/7480012/css/fonts.css" />
 
     <style type="text/css">
-      body {
-        font-family: 'Poppins';
-        font-weight: 400;
-        background-color: #2B2B2B;
+      html {
+        background-color: #2b2b2b;
+        color: #fff;
+        font-family: "Ringside Wide SSm A", "Ringside Wide SSm B";
+        font-size: 62.5%;
+        font-style: normal;
+        line-height: 1;
+        margin: 0 auto;
       }
-      html,body{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
+
+      a:link,
+      a:visited {
+        color: #7f7f7f;
       }
-      #wrapper {
+      a:hover,
+      a:active {
+        color: #fff;
+      }
+
+      /* Header */
+
+      header {
+        margin: 4rem 0 3rem 0;
         text-align: center;
-        position: fixed;
-        top: 50%;
-        left: 50%;
+      }
+      h1 {
+        color: #fff;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 auto;
+        margin-bottom: 1.2rem;
+        background-image: url('/image/logo.png') ;
+        background-size: 100%;
+        width: 200px;
+        height: 50px;
+        text-indent: 100%; 
+        white-space: nowrap; 
+        overflow: hidden; 
+      }
+      h2 {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 0.6rem;
+      }
+      h3 {
+        color: #7f7f7f;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1;
+        margin: 0;
+      }
+
+      /* Main */
+
+      .section-main {
+        position: relative;
+        margin: 0 0 6rem 0;
+        text-align: center;
         width: 100%;
-        transform: translate(-50%, -50%);
       }
-      a, a:visited {
-        color: #fff;
+      video {
+        margin-bottom: 3rem;
       }
-      p {
-        margin: 0 0 1em 0;
-      }
-      .logo img {
-        width: 300px;
-        padding: .5em;
-      }
-      .preorder img {
-        width: 140px;
-        padding: .5em;
-      }
-      .button {
-        font-weight: 600;
-        color: #fff;
-        padding: 8pt 20px;
-        border-radius: 8px;
-        background-color: #585858;
+      .appstore-download {
         display: inline-block;
-        cursor: pointer;
+        background-image: url('/image/appstore-download.png') ;
+        background-size: 100%;
+        width: 120px;
+        height: 42px;
+        text-indent: 100%; 
+        white-space: nowrap; 
+        overflow: hidden; 
+      }
+
+      /* Quotes */
+
+      #quote-wrapper {
+        display: flex;
+      }
+
+      .quotes {
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        height: 50px;
+        width: 100%;
+      }
+      .quotes-box {
+        border: 2px solid #ddd;
+        padding: 1.5rem 1rem;
+      }
+      .quotes-txt {
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 1.6;
+        margin: 0 0 0.5em 0;
+      }
+      .quotes-attr {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0;
+      }
+      .quotes-attr a,
+      .quotes-attr a:visited {
+        color: #fff;
         text-decoration: none;
       }
-      .footer {
-        font-size: 0.8em;
-        color: #bbb;
+      .quotes-attr a:hover {
+        text-decoration: underline;
       }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        /* mobile styles */
+
+      /* danrubin */
+      #quote1 {
+        border-color: #ff9900;
+        position: absolute;
+        top: 8rem;
+        right: 6rem;
+        width: 19rem;
+      }
+      /* gvngld */
+      #quote2 {
+        border-color: #7D7D7D;
+        position: absolute;
+        top: 16rem;
+        left: 5rem;
+        width: 12.5rem;
+        z-index: 5;
+      }
+      /* shutterbugs */
+      #quote3 {
+        border-color: #AFAFAF;
+        position: absolute;
+        top: 5rem;
+        left: 15rem;
+        width: 16rem;
+      }
+
+      /* Footer */ 
+
+      footer {
+        text-align: center;
+      }
+      footer p {
+        margin-bottom: 1.4em;
+      }
+      .footer-links a {
+        display: inline-block;
+        padding: 0 0.5rem;
+      }
+      .footer-signoff {
+        color: #7f7f7f;
+        font-size: 0.9rem;
+        font-weight: 300;
       }
     </style>
+
     </head>
   <body>
-    <div id="wrapper">
+    <header>
+      <h1>Series</h1>
+      <h2>Fast and flexible photo layout</h2>
+      <h3>Made for photographers. Optimized for Instagram.</h3>
+    </header>
 
-      <p class="logo">
-        <img src="/text-mark.png" alt="Logo for: Series, a design tool for photo stories">
-      </p>
+    <section class="section-main">
+      <div id="quote-wrapper">
 
-      <p class="preorder">
-        <a href="https://apps.apple.com/us/app/id1471473571">
-          <img src="/app-store-download.png" alt="Download on the App Store">
-        </a>
-      </p>
+        <ol class="quotes">
+          <li class="quotes-box" id="quote1">
+            <p class="quotes-txt">
+              “Series makes creating Instagram Carousels simple and straightforward, especially splitting wider images over multiple frames.<br>An indispensable tool.”
+            </p>
+            <p class="quotes-attr">
+              <a href="https://instagram.com/danrubin/">Dan Rubin</a>
+            </p>
+          </li>
+        </ol>
 
-      <p class="footer">
-        Follow <a href="https://www.instagram.com/seriesphotosapp">@seriesphotosapp</a> on Instagram
+        <video playsinline autoplay muted loop width="230">
+          <source src="/video/demo-framed.v1.mp4" type="video/mp4">
+        </video>
+
+        <ol class="quotes">
+          <li class="quotes-box" id="quote2">
+            <p class="quotes-txt">
+              “Tools for those of us that shoot a lot but feel weird about posting too much or too similar.”
+            </p>
+            <p class="quotes-attr">
+              <a href="https://www.instagram.com/gvngld/">Gavin Gould</a>
+            </p>
+          </li>
+          <li class="quotes-box" id="quote3">
+            <p class="quotes-txt">
+              “It’s been good practice for me in understanding the narrative component to my works.”
+            </p>
+            <p class="quotes-attr">
+              <a href="https://instagram.com/shutterbugs87/">Joonbug</a>
+            </p>
+          </li>
+        </ol>
+      </div>
+
+      <p>
+        <a class="appstore-download" href="https://apps.apple.com/us/app/id1471473571">Download on the App Store</a>
       </p>
-    </div>
+    </section>
+
+    <footer>
+      <p class="footer-links">
+        <a href="/legal/privacy.html">Privacy Policy</a>
+        <a href="/legal/terms.html">Terms of Use</a>
+        <a href="/support.html">Support</a>
+        <a href="/downlload">Download</a>
+      </p>
+      <p class="footer-signoff">
+        Copyright &copy; 2020 Recentralized
+      </p>
+    </footer>
   </body>
+
 </html>

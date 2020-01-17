@@ -381,7 +381,9 @@
         font-weight: 300;
         line-height: 1.5;
         margin: 0 0 3rem 0;
+        padding: 0 2rem 0 2rem;
         width: 100%;
+        max-width: 300px;
       }
 
       .demos video {
@@ -399,10 +401,14 @@
           padding-bottom: 2rem;
         }
         .demos p {
-          width: 50%;
-          max-width: 300px;
           font-size: 1.1rem;
-          padding: 0 2rem 0 2rem;
+        }
+      }
+
+      /* Demo sizes for very large screens */
+      @media only screen and (min-width: 850px) {
+        .demos p {
+          width: 50%;
         }
       }
 

@@ -21,7 +21,7 @@ dev:
 
 # Deployment to AWS
 AWS_PROFILE=recentralized-org
-AWS_S3_BUCKET=www.seriesapp.io
+AWS_S3_BUCKET=www.seriesphotos.app
 
 # Configure the AWS tool.
 config-aws:

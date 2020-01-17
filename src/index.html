@@ -73,6 +73,37 @@
         white-space: nowrap; 
         overflow: hidden; 
       }
+      
+      /* Typography */
+
+      .heading2 {
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 0.6rem;
+      }
+
+      .heading3 {
+        color: #7f7f7f;
+        font-size: .9rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        margin: 0;
+      }
+
+      @media only screen and (min-device-width: 500px) {
+          .heading2 {
+            font-size: 1.8rem;
+          }
+          .heading3 {
+            font-size: 1.3rem;
+          }
+      }
 
       /* Header */
 
@@ -141,7 +172,7 @@
         text-align: center;
         width: 100%;
       }
-      video {
+      #section-main video {
         margin: 0;
         max-width: 80%;
       }
@@ -151,7 +182,7 @@
 
       /* Constrain video width on large screen */
       @media only screen and (min-device-width: 500px) {
-        video {
+        #section-main video {
           max-width: 230px;
         }
       }
@@ -344,10 +375,66 @@
         width: 100%;
       }
 
+      /* Section: Demos */
+
+      #section-demos {
+        background-color: #070707;
+        margin: 0 0 3rem 0;
+        padding: 3rem 0 1rem 0;
+        width: 100%;
+      }
+
+      #section-demos h2,
+      #section-demos h3 {
+        text-align: center;
+      }
+      #section-demos h3 {
+        margin-bottom: 3rem;
+      }
+
+      .demos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .demos p {
+        color: #7d7d7d;
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.5;
+        margin: 0 0 3rem 0;
+        width: 100%;
+      }
+
+      .demos video {
+        border: 2px solid #fff;
+        display: block;
+        width: 100%;
+        margin: 0 0 1rem 0;
+        padding: 0;
+      }
+
+      /* Demo sizes for large screens */
+      @media only screen and (min-device-width: 500px) {
+        #section-demos {
+          padding-top: 5rem;
+          padding-bottom: 2rem;
+        }
+        .demos p {
+          width: 50%;
+          max-width: 300px;
+          font-size: 1.1rem;
+          padding: 0 2rem 0 2rem;
+        }
+      }
+
       /* Footer */ 
 
       footer {
-        margin: 6rem 0 3rem 0;
+        margin: 3rem 0 3rem 0;
         text-align: center;
       }
       footer p {
@@ -433,6 +520,25 @@
           Join a community of photographers that’s finding new ways to present their work and their tell stories.
         </dd>
       </dl>
+    </section>
+
+    <section id="section-demos">
+      <h2 class="heading2">Powerful tools, no fixed templates</h2>
+      <h3 class="heading3">The first layout tool designed for photographs</h3>
+      <div class="demos">
+        <p>
+          <video controls muted disablePictureInPicture controlslist="nodownload">
+            <source src="/video/demo-wide.mp4" type="video/mp4">
+          </video>
+          Split images across multiple frames to show more of your photos in an Instagram Carousel.
+        </p>
+        <p>
+          <video controls muted disablePictureInPicture controlslist="nodownload">
+            <source src="/video/demo-diptych.mp4" type="video/mp4">
+          </video>
+          Pair two photos for a classic diptych. Adjust whitespace to balance.
+        </p>
+      </div>
     </section>
 
     <footer>

@@ -6,15 +6,22 @@ else
 endif
 
 SRCDIR=./src
+DOCSDIR=./tailwindui-syntax
 DISTDIR=./dist
 
 deploy: build upload
+
+clean:
+	rm -rf ${DISTDIR}
 
 dist:
 	mkdir dist
 
 build: dist
 	cp -r ${SRCDIR}/* ${DISTDIR}
+	cd ${DOCSDIR} && npm run export
+	cp -r ${DOCSDIR}/out ${DISTDIR}/docs
+	cp -r ${DOCSDIR}/out/fonts/* ${DISTDIR}/fonts
 
 dev:
 	cd $(SRCDIR) && python -m SimpleHTTPServer 4000

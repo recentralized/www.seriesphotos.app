@@ -22,6 +22,7 @@ build: dist
 	cd ${DOCSDIR} && npm run export
 	cp -r ${DOCSDIR}/out ${DISTDIR}/docs
 	cp -r ${DOCSDIR}/out/fonts/* ${DISTDIR}/fonts
+	cp -r ${DOCSDIR}/out/docs-assets ${DISTDIR}/docs-assets
 
 dev:
 	cd $(SRCDIR) && python -m SimpleHTTPServer 4000

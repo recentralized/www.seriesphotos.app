@@ -38,7 +38,7 @@ const tags = {
     render: ({ src, alt = '' }) => (
       <span>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={'/docs/' + src + '.png'} alt={alt} class="doc-image" />
+        <img src={'/docs-assets/' + src + '.png'} alt={alt} class="doc-image" />
       </span>
     ),
   },

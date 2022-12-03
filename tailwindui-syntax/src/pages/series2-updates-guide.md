@@ -3,12 +3,12 @@ title: Changes in Series 2.0
 description: Get oriented to the updates.
 ---
 
-This guide will help you get oriented to the changes in Series 2.0. There's a lots to explore, but keeping a fast and simple workflow is the goal.
+This guide will help you get oriented to the changes in Series 2.0. There's a lot to explore, but keeping a fast and simple workflow is the goal.
 
 
 ## Video
 
-You can use videos and photos anywhere in the app. Any exported region containing a video will be a video file, othersize a PNG.
+You can use videos and photos anywhere in the app. Any exported region containing a video will be a video file, otherwise a PNG.
 
 
 ## Import and Export
@@ -16,7 +16,7 @@ You can use videos and photos anywhere in the app. Any exported region containin
 The __Import__ and __Export__ buttons moved from the bottom of the screen to the top right corner. 
 
 
-### Reset Workspace
+## Reset Workspace
 
 Reset to a fresh layout by tapping __Actions__, then __Reset Workspace__. Choose to Reset Everything, or to remove Content Only, keeping all layout settings.
 
@@ -61,7 +61,7 @@ __Grid__ is all new layout with many options
 
 ## Fit and Fill
 
-The __Photos Fill Space__ tool is called __Contents Fill Cell__. 
+What __Photos Fill Space__ tool is now called __Contents Fill Cell__. 
 
 It works the same; changing whether your content is displayed uncropped, or cropped to fill the available space. There’s more to it, but we’ll cover that later.
 
@@ -73,7 +73,7 @@ The Margin and Edge tools offer more control. Tap the Detail button to adjust ea
 
 ## Background
 
-The Background control opens up plenty of potential. Use color, photo, or video. Save your favorites to reuse across projects. Recent Content lets you quickly apply something from this session. 
+The Background control opens up plenty of potential. Use color, photo, or video. Save your favorites to reuse across projects. Recent Content lets you quickly apply content already in this layout.
 
 
 ## Templates
@@ -83,16 +83,16 @@ Tap the Templates button to find your saved Templates. Create new ones. Tap to a
 
 ## Preview and Export
 
-This should feel familiar, but tap the Gear icon to explore new Previews and Export options.
+This should feel familiar, but tap the Gear icon to explore new Preview and Export options.
 
 Exported images (and videos) are now optimized for Instagram by default (1080 wide).
 
 
 ## Saved Color Settings
 
-In Series 1.0 you could manage your saved colors in Settings. That feature has been removed, but will return with more improved tools for managing a library of content. 
+In Series 1.0 you could manage your saved colors in Settings. That feature has been removed, but will return with improved tools for managing a library of colors, images, and videos. 
 
 
 ## Frame Ratio Settings
 
-In Series 1.0 you could customize which Frame Ratios were in the Editor. That feature has been removed and all ratios are available.
+In Series 1.0 you could customize which Frame Ratios were in the Editor. That feature has been removed and all ratios are available in the editor.

@@ -29,6 +29,19 @@ const tags = {
       </figure>
     ),
   },
+  'doc-image': {
+    selfClosing: true,
+    attributes: {
+      src: { type: String },
+      alt: { type: String },
+    },
+    render: ({ src, alt = '' }) => (
+      <span>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={'/docs/' + src + '.png'} alt={alt} class="doc-image" />
+      </span>
+    ),
+  },
   'quick-links': {
     render: QuickLinks,
   },

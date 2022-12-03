@@ -3,7 +3,7 @@ title: Changes in Series 2.0
 description: Get oriented to the updates.
 ---
 
-This guide will help you get oriented to the changes in Series 2.0. There's a lots to explore, but keeping a fast and simple workflow is the priority.
+This guide will help you get oriented to the changes in Series 2.0. There's a lots to explore, but keeping a fast and simple workflow is the goal.
 
 
 ## Video

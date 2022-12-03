@@ -2,5 +2,6 @@
 @import './fonts.css';
 @import './docsearch.css';
 @import './prism.css';
+@import './docs.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';

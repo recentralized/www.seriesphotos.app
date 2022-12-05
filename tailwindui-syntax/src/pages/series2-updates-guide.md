@@ -24,7 +24,7 @@ The __Add__ and __Share__ buttons moved from the bottom of the screen to the top
 
 The __Trash__ button—__Reset Workspace__—is found by tapping __Actions__. Choose to Reset Everything, or to remove Content Only, keeping all layout settings.
 
-{% doc-image src="series2-updates-guide-002-actions" /%}
+{% doc-image src="series2-updates-guide-002-trash" /%}
 {% doc-image src="series2-updates-guide-003-reset" /%}
 
 
@@ -50,9 +50,9 @@ In Series 2.0, each Frame has its own layout. To split content for export, add P
 
 With multiple frames—each with its own layout and settings—what used to take several sessions to create is now a single export!
 
-Tap a Frame to select and focus all tools on it. 
-
 {% doc-image src="series2-updates-guide-005-multipleframes" /%}
+
+Tap a Frame to select and focus all tools on it. 
 
 Stay oriented with the Panel Header. It shows what’s currently selected and allows navigation to other elements. 
 

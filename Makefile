@@ -43,7 +43,7 @@ clean_remote:
 
 create_hls:
 	mkdir -p ${DISTDIR}/video/hls/QuickStart
-	mediafilesegmenter -f ${DISTDIR}/video/hls/QuickStart ${SRCVIDEODIR}/Quick\ Start\ App\ Low.mp4
+	mediafilesegmenter -f ${DISTDIR}/video/hls/quick-start ${SRCVIDEODIR}/Quick\ Start\ App\ Low.mp4
 
 upload_hls: create_hls
 	aws s3 sync --profile=$(AWS_PROFILE) $(DRYRUN) ${DISTDIR}/video/hls s3://$(AWS_S3_BUCKET)/video/hls

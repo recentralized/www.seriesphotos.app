@@ -42,6 +42,20 @@ const tags = {
       </span>
     ),
   },
+  'doc-video': {
+    selfClosing: true,
+    attributes: {
+      src: { type: String },
+      alt: { type: String },
+    },
+    render: ({ src, alt = '' }) => (
+      <video 
+        controls
+        src={'https://www.seriesphotos.app/video/hls/' + src  + '/prog_index.m3u8'} 
+        className="doc-video"
+      />
+    ),
+  },
   'quick-links': {
     render: QuickLinks,
   },

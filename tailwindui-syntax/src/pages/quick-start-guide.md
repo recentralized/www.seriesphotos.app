@@ -5,6 +5,13 @@ description: Learn the basics of using Series
 
 Ready to start with Series? Let’s crop and format several photos for social media to learn the basics.
 
+## Watch the Guide
+
+{% doc-video src="quick-start" /%}
+
+
+## Read the Guide
+
 Tap the __Add__ button. You’ll see your Recents Photos Album
 
 {% doc-image src="quick-start-guide-001-add" /%}

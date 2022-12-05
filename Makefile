@@ -6,6 +6,7 @@ else
 endif
 
 SRCDIR=./src
+SRCVIDEODIR=./src-video
 DOCSDIR=./tailwindui-syntax
 DISTDIR=./dist
 
@@ -40,10 +41,9 @@ upload:
 clean_remote:
 	aws s3 rm --profile=$(AWS_PROFILE) $(DRYRUN) --recursive s3://$(AWS_S3_BUCKET)/
 
-
 create_hls:
 	mkdir -p ${DISTDIR}/video/hls/QuickStart
-	mediafilesegmenter -f ${DISTDIR}/video/hls/QuickStart ~/Desktop/QuickStart.mp4
+	mediafilesegmenter -f ${DISTDIR}/video/hls/QuickStart ${SRCVIDEODIR}/Quick\ Start\ App\ Low.mp4
 
 upload_hls: create_hls
 	aws s3 sync --profile=$(AWS_PROFILE) $(DRYRUN) ${DISTDIR}/video/hls s3://$(AWS_S3_BUCKET)/video/hls

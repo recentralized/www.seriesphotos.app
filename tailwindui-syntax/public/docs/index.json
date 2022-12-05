@@ -1,0 +1,15 @@
+{ 
+  "guides": [
+    {
+      "id": "quickStartGuide",
+      "name": "Quick Start Guide",
+      "url": "https://www.seriesphotos.app/docs/quick-start-guide.html"
+    },
+    {
+      "id": "series2UpdatesGuide",
+      "name": "Series 2.0 Updates Guide",
+      "url": "https://www.seriesphotos.app/docs/series2-updates-guide.html"
+    }
+  ],
+  "manuals": []
+}

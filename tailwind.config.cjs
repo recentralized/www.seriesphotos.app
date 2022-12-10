@@ -6,7 +6,7 @@ module.exports = {
     colors: {
       'back': '#222222',
       'secondary': '#AFAFAF',
-      'primary': '#ffffff'
+      'primary': '#FFFFFF'
     },
     fontFamily: {
       sans: ['"Ringside Regular SSm A", "Ringside Regular SSm B"', 'sans-serif'],

@@ -5,5 +5,8 @@ export interface Props {
 const { src } = Astro.props;
 ---
 <span>
-  <img src={'/docs/assets/' + src + '.png'} class="w-[70%] max-w-[500px]" />
+  <img 
+    src={'/docs/assets/' + src + '.png'} 
+    class="max-w-[500px] border-[1px] border-secondary" 
+  />
 </span>

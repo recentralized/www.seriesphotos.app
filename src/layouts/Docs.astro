@@ -3,7 +3,7 @@ const { generator, site } = Astro
 const { frontmatter } = Astro.props;
 ---
 <!DOCTYPE html>
-<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+<html lang="en" class="h-full motion-safe:scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -14,7 +14,7 @@ const { frontmatter } = Astro.props;
 
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6396132/6732212/css/fonts.css" />
   </head>
-  <body class="bg-back text-secondary container mx-auto max-w-[800px] p-8">
+  <body class="dark bg-back text-secondary container mx-auto max-w-[800px] p-8">
     <article class="prose prose-neutral dark:prose-invert">
       <slot />
     </article>

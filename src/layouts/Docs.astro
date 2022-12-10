@@ -13,6 +13,14 @@ const { frontmatter } = Astro.props;
     <title>Series — {frontmatter.title}</title>
 
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6396132/6732212/css/fonts.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149900284-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-149900284-1');
+    </script>
   </head>
   <body class="dark bg-back text-secondary container mx-auto max-w-[800px] p-8">
     <article class="prose prose-neutral dark:prose-invert">

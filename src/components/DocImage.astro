@@ -1,0 +1,9 @@
+---
+export interface Props {
+	src: string;
+}
+const { src } = Astro.props;
+---
+<span>
+  <img src={'/docs/assets/' + src + '.png'} class="w-[70%] max-w-[500px]" />
+</span>

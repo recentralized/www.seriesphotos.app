@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Root.astro';
+import { Image, Picture } from '@astrojs/image/components';
+import logoMark from "~/assets/LogoMark.svg"
+import textMark from "~/assets/TextMark.svg"
+import app from "~/assets/App.png"
+import appStore from "~/assets/AppStore.svg"
+---
+
+<Layout title="Series">
+	<main class="text-primary flex flex-col md:flex-row">
+
+    <div class="flex-auto">
+      <div class="flex flex-col gap-4 md:gap-16">
+  
+        <div class="flex-none flex justify-center md:justify-start">
+          <img src={logoMark} width={90} height={90} alt="Series Logo Mark" />
+        </div>
+  
+        <div class="flex flex-col gap-3">
+
+          <div class="flex justify-center md:justify-start">
+            <img src={textMark} width={256} height={70} alt="Series Text Mark" />
+          </div>
+
+          <div class="flex flex-col gap-8 text-center md:text-start">
+            <div class="text-2xl">
+              <div class="pb-[2px]">Combine photos and videos</div>
+              <div>Polish and share effortlessly</div>
+            </div>
+            <div class="flex justify-center md:justify-start">
+              <a href="https://apps.apple.com/us/app/id1471473571">
+                <img src={appStore} width={120} height={40} alt="Download on the App Store" />
+              </a>
+            </div>
+            <div class="text-secondary text-base">
+              <span>Designed for iPhone and iPad</span>
+            </div>  
+          </div>
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="flex-none w-300 flex justify-center md:justify-start mt-8 md:mt-0">
+      <Picture src={app} sizes="300px" widths={[900]} aspectRatio={300/590} quality={10} alt="Screenshot of Series for iPhone" />
+    </div>
+  </main>
+
+  <footer class="text-secondary container mx-auto py-12 text-center md:text-start">
+    <p class="text-sm pb-6 flex flex-col gap-4 md:gap-8 md:flex-row justify-center">
+      <a class="hover:text-primary" href="https://www.instagram.com/seriesphotosapp">Instagram</a>
+      <a class="hover:text-primary" href="https://www.twitter.com/seriesphotosapp">Twitter</a>
+      <a class="hover:text-primary" href="https://apps.apple.com/us/app/id1471473571">Download</a>
+      <a class="hover:text-primary" href="/legal/privacy.html">Privacy Policy</a>
+      <a class="hover:text-primary" href="/legal/terms.html">Terms of Use</a>
+      <a class="hover:text-primary" href="support@recentralized.org">Contact</a>
+      <a class="hover:text-primary" href="/docs/">Help</a>
+    </p>
+    <p class="text-xs text-center">
+      Copyright &copy; 2020 Recentralized
+    </p>
+  </footer>
+</Layout>
+
+<style>
+</style>

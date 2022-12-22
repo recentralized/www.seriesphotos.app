@@ -1,0 +1,15 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "6P93C5F6VS.Recentralized.Series", "6P93C5F6VS.Recentralized.Series.dev", "6P93C5F6VS.Recentralized.Series.beta" ],
+             "components": [
+               {
+                  "/": "/events/*",
+                  "comment": "Matches any URL with a path that starts with /events/"
+               }
+             ]
+           }
+       ]
+   }
+}

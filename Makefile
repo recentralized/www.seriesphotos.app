@@ -8,6 +8,7 @@ endif
 SRCDIR=./src
 SRCVIDEODIR=./src-video
 DISTDIR=./dist
+APPLINKSFILE=.well-known/apple-app-site-association
 
 deploy: build upload
 
@@ -31,6 +32,7 @@ config-aws:
 
 upload:
 	aws s3 sync --profile=$(AWS_PROFILE) $(DRYRUN) --delete --exclude=video/hls/* $(DISTDIR) s3://$(AWS_S3_BUCKET)/
+	aws s3 cp --profile=$(AWS_PROFILE) $(DRYRUN) --content-type='application/json' $(DISTDIR)/${APPLINKSFILE} s3://$(AWS_S3_BUCKET)/${APPLINKSFILE}
 
 clean_remote:
 	aws s3 rm --profile=$(AWS_PROFILE) $(DRYRUN) --recursive s3://$(AWS_S3_BUCKET)/

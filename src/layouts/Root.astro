@@ -1,4 +1,6 @@
 ---
+import FooterNavigation from '~/components/FooterNavigation.astro';
+
 export interface Props {
 	title: string;
 }
@@ -9,6 +11,7 @@ const { generator, site } = Astro;
 const description = "Photo Layout";
 const image = new URL("social.jpg", site);
 ---
+
 
 <!DOCTYPE html>
 <html lang="en" class="h-full motion-safe:scroll-smooth">
@@ -47,5 +50,6 @@ const image = new URL("social.jpg", site);
     px-8 pt-8 
   ">
     <slot />
+    <FooterNavigation />
   </body>
 </html>

@@ -1,7 +1,12 @@
 ---
-const { generator, site } = Astro
+import FooterNavigation from "~/components/FooterNavigation.astro";
+import combinedMark from "~/assets/CombinedMark.svg";
+import appStore from "~/assets/AppStore.svg";
+
+const { generator, site } = Astro;
 const { frontmatter } = Astro.props;
 ---
+
 <!DOCTYPE html>
 <html lang="en" class="h-full motion-safe:scroll-smooth">
   <head>
@@ -12,19 +17,67 @@ const { frontmatter } = Astro.props;
 
     <title>Series — {frontmatter.title}</title>
 
-    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6396132/6732212/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cloud.typography.com/6396132/6732212/css/fonts.css"
+    />
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149900284-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-149900284-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-149900284-1');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-149900284-1");
     </script>
+    <style type="text/css">
+      body header,
+      body footer {
+        display: none;
+      }
+      body.web header,
+      body.web footer {
+        display: block;
+      }
+    </style>
   </head>
   <body class="dark bg-back text-secondary container mx-auto max-w-[800px] p-8">
-    <article class="prose prose-neutral dark:prose-invert">
-      <slot />
-    </article>
+    <header>
+      <div class="flex flex-row pb-8">
+        <div class="flex flex-row grow">
+          <a href="/"
+            ><img src={combinedMark} width={222} height={48} alt="Series" />
+          </a>
+        </div>
+        <div class="flex flex-row items-center">
+          <a href="https://apps.apple.com/us/app/id1471473571">
+            <img
+              src={appStore}
+              width={120}
+              height={40}
+              alt="Download on the App Store"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
   </body>
+
+  <article class="prose prose-neutral dark:prose-invert">
+    <slot />
+  </article>
+  <FooterNavigation />
+  <script>
+    var isAppWebView = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(
+      navigator.userAgent
+    );
+    if (!isAppWebView) {
+      document.body.classList.add("web");
+    }
+  </script>
 </html>

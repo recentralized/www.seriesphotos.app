@@ -16,6 +16,11 @@ export async function get({params, request}) {
             "id": "series2-updates-guide",
             "name": "Series 2.0 Updates Guide",
             "url": "https://www.seriesphotos.app/docs/series2-updates-guide.html"
+          },
+          {
+            "id": "threads",
+            "name": "Using Series with Threads",
+            "url": "https://www.seriesphotos.app/docs/threads.html"
           }
         ],
         "manuals": []

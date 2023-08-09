@@ -5,11 +5,11 @@ export interface Props {
 	title: string;
 }
 
+const { generator, site } = Astro;
 const { title } = Astro.props;
 
-const { generator, site } = Astro;
 const description = "Photo Layout";
-const image = new URL("social.jpg", site);
+const socialImage = new URL("social.v2.png", site);
 ---
 
 
@@ -29,8 +29,9 @@ const image = new URL("social.jpg", site);
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={site} />
-    <meta property="og:image" content={image} />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:image" content={socialImage} />
+    <meta property="fb:app_id" content="2390619004436137" />
+    <meta property="twitter:card" content="summary_large_image" />
 
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6396132/6732212/css/fonts.css" />
 

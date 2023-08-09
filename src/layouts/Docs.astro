@@ -5,6 +5,8 @@ import appStore from "~/assets/AppStore.svg";
 
 const { generator, site } = Astro;
 const { frontmatter } = Astro.props;
+
+const socialImage = new URL("social.v2.png", site);
 ---
 
 <!DOCTYPE html>
@@ -16,6 +18,16 @@ const { frontmatter } = Astro.props;
     <meta name="generator" content={generator} />
 
     <title>Series — {frontmatter.title}</title>
+    <meta name="description" content={frontmatter.title} />
+
+    <!-- social media -->
+    <meta property="og:title" content={frontmatter.title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={frontmatter.title} />
+    <meta property="og:url" content={site} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="fb:app_id" content="2390619004436137" />
+    <meta property="twitter:card" content="summary_large_image" />
 
     <link
       rel="stylesheet"

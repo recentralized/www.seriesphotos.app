@@ -35,13 +35,15 @@ const { frontmatter } = Astro.props;
       gtag("js", new Date());
       gtag("config", "UA-149900284-1");
     </script>
-    <style type="text/css">
+    <style>
       body header,
-      body footer {
+      body footer,
+      body article h1 {
         display: none;
       }
       body.web header,
-      body.web footer {
+      body.web footer,
+      body.web article h1 {
         display: block;
       }
     </style>
@@ -69,6 +71,7 @@ const { frontmatter } = Astro.props;
   </body>
 
   <article class="prose prose-neutral dark:prose-invert">
+    <h1>{frontmatter.title}</h1>
     <slot />
   </article>
   <FooterNavigation />
